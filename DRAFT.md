@@ -6,7 +6,7 @@
 in #89903 that you were waiting for somebody to complain about the new behavior. Here are two concrete cases where
 focus after a soft navigation does not match a hard navigation, on 16.4.0-canary.57:
 
-Repro: <REPO_URL> (a script that presses Enter on a link, then Tab, and records where focus lands, for each
+Repro: https://github.com/stefanprobst/next-soft-nav-focus-repro (a script that presses Enter on a link, then Tab, and records where focus lands, for each
 `next/link` and a plain `<a>` twin as the hard-navigation baseline; same results in Chromium, Firefox and WebKit)
 
 **1. With `cacheComponents`, Tab after a soft navigation skips the whole new page.** The activated link is in the
